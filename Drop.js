@@ -3,7 +3,7 @@ class Drop {
 
     this.pos = pos;
     this.size = size;
-    this.velocity = Utils.map(size, min_size, max_size, 10, 100);
+    this.velocity = Utils.map(size, min_size, max_size, 50, 200);
     this.opacity = Utils.map(size, min_size, max_size, 0.9, 0.2);
     this.color = color;
 
@@ -26,7 +26,7 @@ class Drop {
   reset() {
 
     const other_drop = Drop.randomDrop();
-    console.log(this.size, other_drop.size);
+
     this.pos = other_drop.pos;
     this.size = other_drop.size;
     this.velocity = other_drop.velocity;
