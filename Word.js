@@ -2,6 +2,7 @@ class Word{
     constructor(){
         this.form = two.makeText('alo',two.width/2,3*two.height/4);
         this.form.color = "rgb(255,0,0)";
+        this.form.linewidth = 0.5;
         this.form.scale = 5.0;
         this.form.opacity = 0.0;
     }
@@ -24,7 +25,9 @@ class Word{
         //}
     }
     getText(){
-        return "Teste";
+      console.log(Math.random()*frases.respostas.length)
+      let txt = frases.respostas[6].resposta
+        return txt;
     }
 }
 function createAnimationWordPosition(new_position, onComplete) {

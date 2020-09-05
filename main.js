@@ -6,7 +6,6 @@ var two = new Two({
 }).appendTo(document.body);
 
 
-
 document.body.addEventListener("click", () => {
     rain.onClick()
 }, false);
@@ -18,6 +17,8 @@ let foreground = two.makeGroup();
 let rain = new Rain();
 let word = new Word();
 let wordFlag = false;
+
+
 two.bind('update', function () {
 
     TWEEN.update();

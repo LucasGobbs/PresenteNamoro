@@ -3,7 +3,7 @@ class Drop {
 
     this.pos = pos;
     this.size = size;
-    this.velocity = Utils.map(size, min_size, max_size, 50, 200);
+    this.velocity = Utils.map(size, min_size, max_size, 50, 500);
     this.opacity = Utils.map(size, min_size, max_size, 0.9, 0.2);
     this.color = color;
 
@@ -12,6 +12,10 @@ class Drop {
   addToScene() {
     if (!this.form) {
       this.form = two.makeEllipse(this.pos.x, this.pos.y, this.size, this.size);
+      this.form.vertices.forEach(function(v) {
+        v.origin = new Two.Vector().copy(v);
+      });
+
     } else {
       this.form.translation.set(this.pos.x, this.pos.y);
       this.form.width = this.size * 2;
@@ -21,7 +25,13 @@ class Drop {
     this.form.opacity = this.opacity;
   }
   update(delta) {
+    
     this.form.translation.y += this.velocity * delta;
+    
+    
+    
+    
+    
   }
   reset() {
 
