@@ -5,7 +5,7 @@ class Frases{
 
     }
     static getRandomFrase(){
-        let index = Math.random()*frases.respostas.length;
+        let index = Math.floor(Math.random()*frases.respostas.length);
         return frases.respostas[index].resposta
     }
 }

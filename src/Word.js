@@ -25,9 +25,7 @@ class Word{
         //}
     }
     getText(){
-      console.log(Math.random()*frases.respostas.length)
-      let txt = frases.respostas[6].resposta
-        return txt;
+        return Frases.getRandomFrase();
     }
 }
 function createAnimationWordPosition(new_position, onComplete) {
