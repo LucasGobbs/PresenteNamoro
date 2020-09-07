@@ -3,11 +3,12 @@ class Drop {
 
     this.pos = pos;
     this.size = size;
-    this.velocity = Utils.map(size, min_size, max_size, 50, 500);
     this.opacity = Utils.map(size, min_size, max_size, 0.9, 0.2);
     this.color = color;
 
-
+    const horizontal_vel = Utils.map(size, min_size, max_size, 50, 200)* (Math.random()*2-1);
+    const vertical_vel = Utils.map(size, min_size, max_size, 50, 400);
+    this.velocity = new Two.Vector(horizontal_vel,vertical_vel);
   }
   addToScene() {
     if (!this.form) {
@@ -25,8 +26,8 @@ class Drop {
     this.form.opacity = this.opacity;
   }
   update(delta) {
-    
-    this.form.translation.y += this.velocity * delta;
+    const vel_delta = this.velocity.clone().multiplyScalar(delta);
+    this.form.translation.addSelf(vel_delta);
     
     
     

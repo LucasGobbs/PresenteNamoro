@@ -1,7 +1,8 @@
 class Rain {
   constructor() {
     this.drops = [];
-    this.createNDrops(90);
+    //this.createNDrops(90);
+    this.createNDrops(150);
     this.timeScale = 1;
     this.index = 0;
     this.start = false;
@@ -58,7 +59,8 @@ class Rain {
           createAnimationDropSize(this.index, {
             width: size * 1.5,
             height: size * 1.5
-          },()=>{
+          }, () => {
+
             word.startAnimation();
           }).start();
         }).start();
@@ -80,10 +82,18 @@ class Rain {
 
     for (let drop of this.drops) {
       drop.update(deltaScale);
-      if (drop.form.position.y - drop.size > two.height) {
+      if (drop.form.position.y - drop.size > two.height ||
+        drop.form.position.x - drop.size > two.width ||
+        drop.form.position.x + drop.size < 0) {
+
         drop.reset();
+
+
       }
     }
+  }
+  check_boundary() {
+
   }
 }
 

@@ -6,14 +6,17 @@ var two = new Two({
 }).appendTo(document.body);
 
 
+
+
+
 document.body.addEventListener("click", () => {
     rain.onClick()
 }, false);
-//let rectBack = two.makeRectangle(0,0,two.width * 2,two.height * 2);
-//rectBack.noStroke().fill = "#581845"
+
 
 let background = two.makeGroup();
 let foreground = two.makeGroup();
+
 let rain = new Rain();
 let word = new Word();
 let wordFlag = false;

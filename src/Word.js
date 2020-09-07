@@ -1,5 +1,7 @@
 class Word{
     constructor(){
+        this.frase = document.body.querySelector('.texto');
+
         this.form = two.makeText('alo',two.width/2,3*two.height/4);
         this.form.color = "rgb(255,0,0)";
         this.form.linewidth = 0.5;
@@ -7,16 +9,18 @@ class Word{
         this.form.opacity = 0.0;
     }
     startAnimation(){
-        this.form.value = this.getText();
-        createAnimationWordPosition({x:two.width/2,y:two.height/2}).start();
-        createAnimationWordOpacity(1.0).start();
+      this.frase.classList.add("active");
+      this.frase.innerHTML = this.getText();
+      //this.form.value = this.getText();
+      //createAnimationWordPosition({x:two.width/2,y:two.height/2}).start();
+      //createAnimationWordOpacity(1.0).start();
         
     }
     endAnimation(){
-
-        createAnimationWordOpacity(0.0,()=>{
-            createAnimationWordPosition({x:two.width/2,y:3*two.height/4}).start();
-        }).start();
+      this.frase.classList.remove("active");
+        //createAnimationWordOpacity(0.0,()=>{
+        //    createAnimationWordPosition({x:two.width/2,y:3*two.height/4}).start();
+        //}).start();
         
     }
     update(delta){
