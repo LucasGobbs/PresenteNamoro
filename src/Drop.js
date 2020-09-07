@@ -6,8 +6,8 @@ class Drop {
     this.opacity = Utils.map(size, min_size, max_size, 0.9, 0.2);
     this.color = color;
 
-    const horizontal_vel = Utils.map(size, min_size, max_size, 50, 200)* (Math.random()*2-1);
-    const vertical_vel = Utils.map(size, min_size, max_size, 50, 400);
+    const horizontal_vel = Utils.map(size, min_size, max_size, 50, 100)* (Math.random()*2-1);
+    const vertical_vel = Utils.map(size, min_size, max_size, 50, 300);
     this.velocity = new Two.Vector(horizontal_vel,vertical_vel);
   }
   addToScene() {

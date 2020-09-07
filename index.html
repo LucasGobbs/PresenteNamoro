@@ -1,50 +1,59 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <script src="libs/two.min.js"></script>
-    <script src="libs/tween.js"></script>
-    
-    <style>
-      * { margin: 0; padding: 0; }
-      body { 
-        background: #4C4076; 
-        position: relative;
-        height: 100%;
-      }  
-      .texto {
-        color: red;
-        z-index: 10;
-        position: absolute;
-        left: 50%;
-        top: 60%;
-        opacity: 0.0;
-        font-size: 70px;
-        transform: translateX(-50%);
-        transition: all .6s ease-in-out;
-        font-family: 'Architects Daughter', cursive;
-      }
-      .texto.active {
-          top: 50%;
-          transform: translateX(-50%) translateY(-50%);
-          opacity: 1.0;
-      }
-    </style>
-  </head>
-  
-  <body>
-    <div class="texto">
-      "alo"
-    </div>
-    <body>
-        <script src="src/Frases.js"></script>
-        <script src="src/Utils.js"></script>
-        <script src="src/Word.js"></script>
-        <script src="src/Rain.js"></script>
-        <script src="src/Drop.js"></script>
-        <script src="main.js"></script>
-        
-    </body>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <script src="libs/two.min.js"></script>
+  <script src="libs/tween.js"></script>
+
+  <style>
+    html {
+      height: 100%;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      /*background: #4C4076; */
+      background: linear-gradient(0deg, rgba(161, 85, 185, 1) 0%, #4C4076 100%);
+    }
+
+    .texto {
+      color: white;
+      z-index: 10;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      opacity: 0.0;
+      font-size: 70px;
+      transform: translateX(-50%);
+      transition: all .6s ease-in-out;
+      font-family: 'Architects Daughter', cursive;
+    }
+
+    .texto.active {
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 1.0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="texto">
+    "alo"
+  </div>
+
+  <script src="src/Frases.js"></script>
+  <script src="src/Utils.js"></script>
+  <script src="src/Word.js"></script>
+  <script src="src/Rain.js"></script>
+  <script src="src/Drop.js"></script>
+  <script src="main.js"></script>
+
+
+</body>
+
 </html>
