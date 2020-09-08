@@ -1,7 +1,8 @@
 class Word{
     constructor(){
         this.frase = document.body.querySelector('.texto');
-
+        this.pergunta = document.body.querySelector('.pergunta');
+        this.resposta = document.body.querySelector('.resposta');
         this.form = two.makeText('alo',two.width/2,3*two.height/4);
         this.form.color = "rgb(255,0,0)";
         this.form.linewidth = 0.5;
@@ -9,8 +10,11 @@ class Word{
         this.form.opacity = 0.0;
     }
     startAnimation(){
+      let txt = this.getText();
       this.frase.classList.add("active");
-      this.frase.innerHTML = this.getText();
+      this.pergunta.innerHTML = txt.pergunta;
+      this.resposta.innerHTML = "#" + txt.index + " " + txt.resposta;
+      //this.frase.innerHTML = this.getText();
       //this.form.value = this.getText();
       //createAnimationWordPosition({x:two.width/2,y:two.height/2}).start();
       //createAnimationWordOpacity(1.0).start();
