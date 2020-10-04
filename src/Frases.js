@@ -17,7 +17,7 @@ class Frases{
           resp = frases.respostas[this.index_perg].respostas[this.index_resp];
         }
         
-        console.log(this.index_perg,this.index_resp,perg,resp);
+       // console.log(this.index_perg,this.index_resp,perg,resp);
         this.index_resp++;
         return {
           index: this.index_resp,
