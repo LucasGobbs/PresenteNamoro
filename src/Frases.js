@@ -12,7 +12,9 @@ class Frases{
         let resp = frases.respostas[this.index_perg].respostas[this.index_resp];
         if(!resp){
           this.index_perg++;
+          this.index_resp = 0;
           perg = frases.respostas[this.index_perg].pergunta;
+          resp = frases.respostas[this.index_perg].respostas[this.index_resp];
         }
         
         console.log(this.index_perg,this.index_resp,perg,resp);

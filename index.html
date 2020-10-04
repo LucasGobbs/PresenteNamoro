@@ -22,6 +22,8 @@
   <meta name="theme-color" content="#ffffff">
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
   <script src="libs/two.min.js"></script>
   <script src="libs/tween.js"></script>
 
@@ -39,16 +41,21 @@
     }
 
     .texto {
-      color: white;
+    
+
       z-index: 10;
       position: absolute;
+      width: 80%;
       left: 50%;
       top: 50%;
       opacity: 0.0;
-      font-size: 70px;
+      font-size: 40px;
+   
+     
+     
       transform: translateX(-50%);
       transition: all .6s ease-in-out;
-      font-family: 'Architects Daughter', cursive;
+    
     }
     .texto.active {
       top: 50%;
@@ -56,7 +63,20 @@
       opacity: 1.0;
     }
     .pergunta {
-      color: red;
+      color: #282828;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 30px;
+    }
+    .resposta {
+      color: #282828;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      font-weight: 100;
+      letter-spacing: -0.25px;
+      line-height: 1.25;
+      font-size: 16px;
+      word-break: break-all;
+      word-wrap: pre-wrap;
     }
 
   </style>
@@ -65,10 +85,10 @@
 <body>
   <div class="texto">
     <div class = "pergunta">
-      "Alo?:"
+   
     </div>
     <div class = "resposta">
-      "alo"
+      
     </div>
     
   </div>
