@@ -2,7 +2,8 @@ class Rain {
   constructor() {
     this.drops = [];
     //this.createNDrops(90);
-    this.createNDrops(150);
+    //this.createNDrops(150);
+    this.createNDrops(30);
     this.timeScale = 1;
     this.index = 0;
     this.start = false;
