@@ -1,6 +1,6 @@
 class Word{
     constructor(){
-        this.frase = document.body.querySelector('.texto');
+        this.frase = document.body.querySelector('.card');
         this.pergunta = document.body.querySelector('.pergunta');
         this.resposta = document.body.querySelector('.resposta');
         this.form = two.makeText('alo',two.width/2,3*two.height/4);
@@ -13,7 +13,7 @@ class Word{
       let txt = this.getText();
       this.frase.classList.add("active");
       this.pergunta.innerHTML = txt.pergunta;
-      this.resposta.innerHTML = "#" + txt.index + " " + txt.resposta;
+      this.resposta.innerHTML = txt.resposta;
       //this.frase.innerHTML = this.getText();
       //this.form.value = this.getText();
       //createAnimationWordPosition({x:two.width/2,y:two.height/2}).start();

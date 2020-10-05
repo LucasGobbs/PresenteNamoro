@@ -1,7 +1,7 @@
 
 
 class Frases{
-    static index_perg = 0;
+    static index_perg = 8;
     static index_resp = 0;
     constructor(){
       
@@ -30,6 +30,43 @@ class Frases{
 const frases = {
    
     "respostas": [
+      
+      {
+        "pergunta": "Como tudo comecou &#128540",
+        "respostas": ["(diretao do tinder)<br>Eu: Garota te falar<br>Eu: Sua bio é tão legal q nem sei por onde começar<br>Eu: Tipo gosto de tudo isso tambemmmmm"]
+      },
+      {
+        "pergunta": "Eai, oque aconteceu?",
+        "respostas": ["Conversa vai conversa vem, joguinhos no clash royale pra la e pra cá.<br><br> E a gostosa se apaixona pelo nerdinho :)<br>(e vice e versa)<br>"]
+      },
+      {
+        "pergunta": "Fui apresentada a dona iolanda",
+        "respostas": ["Vc estava jogando comigo em anchieta e me apresentou a ela<br><br>(Mal sabia dona yolanda que eu ja havia conquistado a senhorita julia)"]
+      },
+      {
+        "pergunta": "Primeira vez em vixxx",
+        "respostas": ["Fui pra o aniversário da duda, e dei uma fugida pra conhecer a bonita<br><brLembro de vc toda stalker me filmando na janela do jao vitor"]
+      },
+      {
+        "pergunta": "Momentos aleatorios ",
+        "respostas": ["1) Vc pulando a gradinha la de baixo no pique pega<br>2) minha queda jogando tf quase morri e vc dando gargalhada<br>3)Nossa noite eu vc eler e lolo, contando historia e dando gargalhada até a mae do eler fica brava kkkkkk"]
+      },
+      {
+        "pergunta": "Segunda vez em vix",
+        "respostas": ["1) Brama 9 horas da manha<br>2) Andadinha na praia até a perna doer<br>3)melhor strogonof da minha vida<br>4)maratonar series comendo até explodir melhor coisa"]
+      },
+      {
+        "pergunta": "Eu conheci sua familiaaa",
+        "respostas": ["Reveionzinho regado a bramas, churrasquin, samba, andadas na floresta dos nazistas<br><br>(E o melhor a companhia da grande gostosa ai)😚✌"]
+      },
+      {
+        "pergunta": "Descobri oque era amor do seu lado",
+        "respostas": ["Vc me ensinou, sem eu pedir.Amor e pás apenas"]
+      },
+      {
+        "pergunta": "Quarentena SOS &#128567",
+        "respostas": ["Nesses 3 meses juntos, descobri o quanto sua presenca é boa pra mim<br>Descobri o quanto quero viver ao seu ladinho"]
+      },
       {
         "pergunta": "Porque eu te amo",
         "respostas": [
