@@ -62,8 +62,9 @@ class Rain {
             height: size * 1.5
           }, () => {
 
-            word.startAnimation();
+            
           }).start();
+          word.startAnimation();
         }).start();
         createAnimationDropOpacity(this.index, 1.0).start();
       }).start();
