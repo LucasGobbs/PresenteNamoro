@@ -1,7 +1,7 @@
 
 
 class Frases{
-    static index_perg = 9;
+    static index_perg = 0;
     static index_resp = 0;
     constructor(){
       
@@ -33,7 +33,7 @@ const frases = {
       
       {
         "pergunta": "Como tudo comecou &#128540",
-        "respostas": ["(diretao do tinder)<br>Eu: Garota te falar<br>Eu: Sua bio é tão legal q nem sei por onde começar<br>Eu: Tipo gosto de tudo isso tambemmmmm"]
+        "respostas": ["(diretao do tinder)<br><br>Eu: Garota te falar<br>Eu: Sua bio é tão legal q nem sei por onde começar<br>Eu: Tipo gosto de tudo isso tambemmmmm<br><br>(Joguei meu charme né)"]
       },
       {
         "pergunta": "Eai, oque aconteceu?",

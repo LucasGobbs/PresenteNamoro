@@ -14,7 +14,6 @@ document.body.addEventListener("click", () => {
 let background = two.makeGroup();
 let foreground = two.makeGroup();
 
-
 let rain = new Rain();
 let word = new Word();
 let wordFlag = false;
